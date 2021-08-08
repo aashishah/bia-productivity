@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+.container {
+    overflow-y: hidden;
+    height: 100vh;
+    background-color: #B4EAF5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h4 {
+    font-size: 24px;
+    padding: 2em;
+    color: rgba(103, 168, 182, 0.79);
+    font-weight: 400;
+}
+.clock {
+    background: #B4EAF5;
+    box-shadow: 18px 26px 33px rgba(130, 208, 225, 0.79), -22px -14px 24px #CBF6FF;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width:300px;
+    height: 300px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin-top: 3%;
+}
+
+.box {
+    background: #B4EAF5;
+    box-shadow: 18px 26px 33px rgba(130, 208, 225, 0.79), -22px -14px 24px #CBF6FF;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+
+.top-nav a h4:hover {
+    color: white;
+}
+
+#count h5{
+    font-size: 3em;
+    color:rgba(103, 168, 182, 0.79);
+}
+
+.clicked {
+    box-shadow: 15px 28px 24px #CBF6FF, inset 5px 6px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    pointer-events: none;
+}
+
+.faded{
+    opacity: 30%;
+    pointer-events: none;
+}
