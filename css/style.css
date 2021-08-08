@@ -92,3 +92,36 @@ a:visited {
     padding: 20px;
 }
 
+.arrow-div{
+    margin-top: 200px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.arrow{
+    
+    animation: floatSlow 2s;
+  }
+  
+  .linear {
+    animation-timing-function: linear;
+  }
+  
+  .infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes floatSlow {
+    0% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+    }
+  }
