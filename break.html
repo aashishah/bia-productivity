@@ -10,37 +10,37 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/work.css">
+        <link rel="stylesheet" href="css/break.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
         <div class = "container">
             <div class="top-nav">
-               <a href="break.html"> <h4>Take a break?</h4> </a>
+               <a href="worksession.html"> <h4>Start a work session?</h4> </a>
             </div>
-                <div class="clock">
-                    <div id="count">
-                        <h5>60:00</h5>
-                    </div>
+            <div id="cd">
+                <img src="assets/disck.png" class="rotate linear infinite" >
+            </div>
+            <div class="controls">
+                <div class="prev">
+                    <img src="assets/prev.svg">
                 </div>
-                <div class="options">
-                    <div class="box" onclick="playMusic(0)">
-                        <img src="assets/pen.svg">
-                    </div>
-                    <div class="box" onclick="playMusic(1)">
-                        <img src="assets/house.svg">
-                    </div>
-                    <div class="box" onclick="playMusic(2)">
-                        <img src="assets/laptop.svg">
-                    </div>
-                    <div class="box" onclick="silentMode()">
-                        <img src="assets/nomusic.svg">
-                    </div>
+                <div id="play" onclick="playMusic()">
+                    <img src="assets/play.svg">
                 </div>
-                <h4>What are you working on?</h4>
+                <div class="next">
+                    <img src="assets/next.svg">
+                </div>
+            </div>
         </div>
-
-        <script src="scripts/work.js">
+        <script type="text/javascript">
+            function playMusic(){
+                var sound = new Howl({
+                            src: ['assets/pen.mp3']
+                        });
+                sound.play();
+            }
         </script>
+        
     </body>
 </html>

@@ -17,6 +17,12 @@ section {
     overflow-y: scroll;
     height: 100vh;
 }
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
 
 .one {
     background-color: #B4EAF5;
@@ -84,7 +90,5 @@ section {
     font-weight: 400;
     color: rgba(103, 168, 182, 0.79);
     padding: 20px;
-
-
 }
 
